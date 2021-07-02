@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap"
+            rel="stylesheet"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        />
+        <link rel="stylesheet" href="./src/styles.css" />
+        <title>Music</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="navbar">
+                <label class="logo">Music</label>
+                <ul id="icon">
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">Gift Cards</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+
+                <a class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            <div class="music">
+                <img
+                    src="https://images.unsplash.com/photo-1535587566541-97121a128dc5?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fGd1aXRhcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80"
+                    alt=""
+                    style="width: 100%"
+                />
+                <div class="music-text">
+                    <h4>My Tunes</h4>
+                    <p>
+                        Your music, movies, and TV shows take center stage.
+                        myTunes is the best way to organize and enjoy the music,
+                        movies, and TV shows you already have — and shop for the
+                        ones you want. Enjoy all the entertainment myTunes has
+                        to offer on your Mac and PC.
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Music section -->
+        <section id="overview">
+            <div class="container-1">
+                <h3>Music</h3>
+                <h6>
+                    Your music, movies, and TV shows take center stage. myTunes
+                    is the best way to organize and enjoy the music, movies, and
+                    TV shows you already have — and shop for the ones you want.
+                    Enjoy all the entertainment myTunes has to offer on your Mac
+                    and PC.
+                </h6>
+
+                <button>Start your free trial</button>
+                <h6>
+                    Orange Music is available in myTunes, and for iOS and
+                    Android devices.
+                </h6>
+                <img src="./src/assets/mockup1.png" alt="" width="100%" />
+            </div>
+        </section>
+        <!-- music cards -->
+        <section>
+            <div class="music-item">
+                <h3>Varities of Music</h3>
+                <p>
+                    With over 100,000 movies and TV shows to choose from,
+                    there’s always something great to watch on myTunes and if
+                    you watch on Orange TV 4K, you’ll be able to enjoy a
+                    tremendous selection of your favorite content in 4K HDR. So
+                    get ready to enjoy episodes of your favorite TV shows or hit
+                    movies you’ve been waiting to see — anytime, anywhere. Just
+                    tap to play, or even download if you’re going somewhere you
+                    won’t have Wi-Fi.
+                </p>
+
+                <div class="music-varities">
+                    <div class="music-cards">
+                        <div class="card">
+                            <img src="./src/assets/item1.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="music-cards">
+                        <div class="card">
+                            <img src="./src/assets/item2.jpg" alt="" />
+                        </div>
+                    </div>
+                    <div class="music-cards">
+                        <div class="card">
+                            <img src="./src/assets/item3.jpg" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact form -->
+        <section>
+            <div class="contact">
+                <div class="contact-image"></div>
+                <div class="contact-form">
+<h4>Contact Form</h4>
+
+                    <div class="card">
+                        <form action="">
+                        <label
+                            for="
+                        "
+                            >Name</label
+                        >
+                        <input type="text" />
+
+                        <label for="">Email</label>
+                        <input type="text" />
+                        <label for="">Phone Number</label>
+                        <input type="text" />
+                        <label for="">Message</label>
+                        <input type="text" />
+
+                    </form>
+                    </div>
+                </div>
+            </div>
+                </section>
+                
+                <section>
+                    <div class="footer">
+                        <ul>
+                            <li><a href="" >Overview</a> </li>
+                            <li><a href="" >Music</a> </li>
+                            <li><a href="" >Gift card</a> </li>
+                            <li><a href="" >Contact us</a> </li>
+                            
+
+                        </ul>
+                        
+                        <div class="last-text">
+                           
+                            <p>Contact us</p>
+                            <p>lorem@lorem.com</p>
+                            <p>234-523-1244</p>
+                            <p class="address">Address :3306  Lorem ipsum dolor sit 302112 
+                                .</p>
+                        </div>
+                    </div>
+                </section>
+
+        <script>
+            function myFunction() {
+                var element = document.getElementById("icon");
+                if (element.style.left == "-100%") {
+                    element.style.left = 0;
+                } else {
+                    element.style.left = "-100%";
+                }
+            }
+        </script>
+    </body>
+</html>
