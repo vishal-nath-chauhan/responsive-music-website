@@ -115,24 +115,26 @@ button {
 }
 
 .music-varities {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  display: flex;
   padding: 0px 10px;
-  grid-template-rows: auto auto auto;
+  height: 100vh;
+ 
 }
 
 .music-cards {
-  display: inline-block;
+ flex-basis: auto;
   width: 100%;
   height: 100%;
 }
 
 .card {
-  box-shadow: 4px 8px 4px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 4px 0px 0px 4px rgba(0, 0, 0, 0.3);
   transition: 0.3s;
   padding: 10px 5px;
 
   overflow: hidden;
+  height: 100%;
+
 }
 .card:hover {
   box-shadow: 1px 8px 20px;
@@ -146,7 +148,7 @@ button {
 /* #ff7129  ORANGE */
 
 .music-item {
-  background-color: #70757f;
+  background-color: #000;
   color: white;
 
   font-family: "Source Sans Pro", sans-serif;
@@ -184,8 +186,10 @@ form {
 
 .contact-form .card {
   width: 80vw;
-  margin: auto;
+  margin: 10px auto;
   text-align: center;
+  box-shadow:  1px 8px 20px;;
+  pointer-events: none;
 }
 input[type="text"] {
   display: inline-block;
@@ -270,15 +274,18 @@ input[type="text"] {
   .music-text {
     margin-top: 10px;
   }
-
+.music img{
+  margin-top: -5px;
+}
   .navbar ul {
-    position: fixed;
+    position: absolute;
     text-align: center;
     width: 100%;
     height: 100px;
     left: -100%;
-    top: 80px;
+    top: 72px;
     background-color: #333333;
+    z-index: 1;
   }
   .navbar li {
     display: block;
@@ -304,9 +311,7 @@ input[type="text"] {
   .navbar label {
     display: inline;
   }
-  .music img {
-    filter: blur(2px);
-  }
+
   .nav ul .show {
     left: 0;
   }
